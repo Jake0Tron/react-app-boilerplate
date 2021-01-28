@@ -1,0 +1,37 @@
+{
+  "name": "react-starter",
+  "version": "1.0.0",
+  "description": "boilerplate for react app",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "start:dev": "webpack-dev-server --mode development",
+    "start": "concurrently \"webpack-dev-server --mode development\" \"node server/server.js\"",
+    "start:prod": "webpack-dev-server --mode production",
+    "build": "webpack --mode production"
+  },
+  "author": "Jake Deacon",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.12.10",
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "@babel/preset-react": "^7.12.10",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^1.0.1",
+    "eslint": "^7.18.0",
+    "eslint-plugin-react": "^7.22.0",
+    "style-loader": "^0.23.0",
+    "webpack": "^5.18.0",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "dependencies": {
+    "clean-webpack-plugin": "^3.0.0",
+    "concurrently": "^5.3.0",
+    "express": "^4.17.1",
+    "html-webpack-plugin": "^4.5.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  }
+}
